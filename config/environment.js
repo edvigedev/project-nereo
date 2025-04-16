@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'project-nereo',
     environment,
-    rootURL: '/',
+    rootURL: '/project-nereo/',
     locationType: 'history',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
@@ -41,7 +41,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.locationType = 'hash';
   }
 
   return ENV;
