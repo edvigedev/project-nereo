@@ -1,1 +1,1 @@
-# project-nereo
+# Project NEREO
