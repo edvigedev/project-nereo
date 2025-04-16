@@ -397,7 +397,7 @@ for(let[a,l]of i)if(r.match(a+"$"))return o&&n&&i.has(n)&&(l=g(l),a=g(a)),e.repl
 for(const[a,l]of t)if(a.test(e))return e.replace(a,l)
 return e}r.irregularPairs.forEach((e=>{R.set(e[0].toLowerCase(),e[1]),R.set(e[1].toLowerCase(),e[1]),S.set(e[1].toLowerCase(),e[0]),S.set(e[0].toLowerCase(),e[0])}))},266:(e,t,i)=>{"use strict"
 i.r(t),i.d(t,{default:()=>h})
-var r,s,n,o=i(81),a=i(735),l=i(336),c=i.n(l),d=i(666)
+var r,s,n,o=i(81),a=i(735),l=i(955),c=i.n(l),d=i(666)
 let h=(r=(0,a.inject)("page-title"),s=class extends(c()){constructor(e){super(e),(0,o.a)(this,"tokens",n,this),(0,o.b)(this,"tokenId",(0,d.guidFor)(this)),this.tokens.push({id:this.tokenId})}compute(e,t){const i={...t,id:this.tokenId,title:e.join("")}
 return this.tokens.push(i),this.tokens.scheduleTitleUpdate(),""}willDestroy(){super.willDestroy(),this.tokens.remove(this.tokenId),this.tokens.scheduleTitleUpdate()}},n=(0,o._)(s.prototype,"tokens",[r],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),s)},299:(e,t,i)=>{"use strict"
 i.r(t),i.d(t,{default:()=>g})
