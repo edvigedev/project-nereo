@@ -36,8 +36,8 @@ header a {
 }
 
 .project-logo {
-  height: 6em;
-  width: 4em;
+  height: 10em;
+  width: 7em;
 }
 
 nav {
@@ -57,4 +57,83 @@ footer {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+/* Media queries */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  header {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+
+  .project-logo {
+    height: 12em;
+    width: 8em;
+  }
+
+  nav {
+    gap: 3em;
+  }
+}
+
+/* Medium screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  header {
+    margin-left: 3em;
+    margin-right: 3em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .project-logo {
+    height: 9em;
+    width: 6em;
+  }
+}
+
+/* Small screens (less than 768px) */
+@media (max-width: 767px) {
+  header {
+    margin: 2em 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .project-logo {
+    height: 7em;
+    width: 5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 1em 0;
+  }
 }

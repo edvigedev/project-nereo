@@ -2,6 +2,7 @@
   font-weight: 100;
   text-align: center;
   margin-bottom: 3em;
+  font-size: 3em;
 }
 
 .homepage-random-fact {
@@ -23,4 +24,66 @@
 .homepage-random-fact h3 {
   font-weight: 100;
   font-size: 1.5em;
+}
+
+/* Media queries */
+
+/* Large screens (1200px and up) */
+
+@media (min-width: 1200px) {
+  .homepage-welcome-message {
+    font-size: 3em;
+  }
+
+  .homepage-random-fact {
+    width: 30%;
+    margin: 3em 6em 6em 10em;
+  }
+}
+
+/* Medium screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .homepage-welcome-message {
+    font-size: 2.5em;
+    margin-bottom: 2.5em;
+    padding: 0 2em;
+  }
+
+  .homepage-random-fact {
+    width: 60%;
+    margin: 3em auto 4em auto;
+    padding: 2em;
+  }
+
+  .homepage-random-fact h2 {
+    font-size: 1.8em;
+  }
+
+  .homepage-random-fact h3 {
+    font-size: 1.3em;
+  }
+}
+
+/* Small screens (less than 768px) */
+
+@media (max-width: 767px) {
+  .homepage-welcome-message {
+    font-size: 2em;
+    margin-bottom: 2em;
+    padding: 0 1em;
+  }
+
+  .homepage-random-fact {
+    width: 75%;
+    margin: 2em auto 3em auto;
+    padding: 1.5em;
+  }
+
+  .homepage-random-fact h2 {
+    font-size: 1.5em;
+  }
+
+  .homepage-random-fact h3 {
+    font-size: 1.1em;
+  }
 }

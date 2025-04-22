@@ -1,2 +1,37 @@
 {{page-title "Missions"}}
+<div class="nasa-missions-container">
+  <h1 class="nasa-missions-title">
+    All NASA Missions
+  </h1>
+  <section class="nasa-missions-section">
+    <div class="nasa-missions-search-filter">
+
+      <div class="search-container">
+        <input type="text" placeholder="Search Mission" />
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <p>MISSION STATUS</p>
+      <ul>
+        <li>
+          <input type="checkbox" id="active" class="mission-status-checkbox" />
+          <label for="active" class="status-label">Active</label>
+        </li>
+        <li>
+          <input type="checkbox" id="future" class="mission-status-checkbox" />
+          <label for="future" class="status-label">Future</label>
+        </li>
+        <li>
+          <input type="checkbox" id="past" class="mission-status-checkbox" />
+          <label for="past" class="status-label">Past</label></li>
+      </ul>
+    </div>
+
+    <div>
+      <img />
+    </div>
+
+  </section>
+</div>
 {{outlet}}
