@@ -1,7 +1,27 @@
 {{page-title "ProjectNereo"}}
 
-{{outlet}}
+<header>
+  <h1>
+    <LinkTo @route="homepage">
+      Project NEREO
+    </LinkTo>
+  </h1>
+  <nav>
+    <LinkTo @route="nasa-missions">NASA Missions</LinkTo>
+    <LinkTo @route="gallery">Gallery</LinkTo>
+    <LinkTo @route="iss-tracker">ISS Tracker</LinkTo>
+    <LinkTo @route="your-favorites">Your Favorites</LinkTo>
+  </nav>
+</header>
+
+<body>
+  {{outlet}}
+</body>
 
 <div class="space-greeting">
   🌌 Welcome to Project NEREO! Let's explore the universe together. 🚀
 </div>
+
+<footer>
+  <p>© 2025 Project NEREO</p>
+</footer>

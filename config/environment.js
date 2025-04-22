@@ -5,7 +5,7 @@ module.exports = function (environment) {
     modulePrefix: 'project-nereo',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
       FEATURES: {
