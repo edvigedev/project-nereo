@@ -1,26 +1,30 @@
 {{page-title "ProjectNereo"}}
 
 <header>
-  <h1>
-    <LinkTo @route="homepage">
-      Project NEREO
-    </LinkTo>
-  </h1>
+  <div class="logo-container">
+    <h2>
+      <LinkTo @route="homepage">
+        Project NEREO
+      </LinkTo>
+    </h2>
+    <img
+      src="assets/images/project-nereo-logo.png"
+      alt="Project NEREO Logo"
+      class="project-logo"
+    />
+
+  </div>
   <nav>
-    <LinkTo @route="nasa-missions">NASA Missions</LinkTo>
-    <LinkTo @route="gallery">Gallery</LinkTo>
-    <LinkTo @route="iss-tracker">ISS Tracker</LinkTo>
-    <LinkTo @route="your-favorites">Your Favorites</LinkTo>
+    <h3><LinkTo @route="nasa-missions">NASA Missions</LinkTo></h3>
+    <h3><LinkTo @route="gallery">Gallery</LinkTo></h3>
+    <h3><LinkTo @route="iss-tracker">ISS Tracker</LinkTo></h3>
+    <h3><LinkTo @route="your-favorites">Your Favorites</LinkTo></h3>
   </nav>
 </header>
 
 <body>
   {{outlet}}
 </body>
-
-<div class="space-greeting">
-  🌌 Welcome to Project NEREO! Let's explore the universe together. 🚀
-</div>
 
 <footer>
   <p>© 2025 Project NEREO</p>

@@ -7,6 +7,54 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  font-family: Inter;
   color: white;
+  background-image: url("/assets/images/milky-way.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  gap: 1em;
+}
+
+.project-logo {
+  height: 6em;
+  width: 4em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+nav a {
+  font-weight: 300;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
