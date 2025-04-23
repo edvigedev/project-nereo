@@ -1,7 +1,10 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 /* app/styles/app.css */
 
+@import "./homepage.css";
+@import "./nasa-missions.css";
 @import "./nasa-missions-search-filter.css";
+@import "./nasa-missions-cards-container.css";
 
 body {
   margin: 0;

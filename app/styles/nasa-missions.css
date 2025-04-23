@@ -4,3 +4,8 @@
   margin-bottom: 3em;
   font-size: 3em;
 }
+
+.nasa-missions-section {
+  display: flex;
+  justify-content: space-around;
+}
