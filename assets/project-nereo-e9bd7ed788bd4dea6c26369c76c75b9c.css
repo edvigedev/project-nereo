@@ -1,0 +1,139 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+/* app/styles/app.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Inter;
+  color: white;
+  background-image: url("/assets/images/milky-way-ebd932031610536ac037695d346d30b2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  gap: 1em;
+}
+
+.project-logo {
+  height: 10em;
+  width: 7em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+nav a {
+  font-weight: 300;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* Media queries */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  header {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+
+  .project-logo {
+    height: 12em;
+    width: 8em;
+  }
+
+  nav {
+    gap: 3em;
+  }
+}
+
+/* Medium screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  header {
+    margin-left: 3em;
+    margin-right: 3em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .project-logo {
+    height: 9em;
+    width: 6em;
+  }
+}
+
+/* Small screens (less than 768px) */
+@media (max-width: 767px) {
+  header {
+    margin: 2em 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .project-logo {
+    height: 7em;
+    width: 5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 1em 0;
+  }
+}
