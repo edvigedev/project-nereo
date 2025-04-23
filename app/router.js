@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('homepage');
+  this.route('homepage', { path: '/' });
   this.route('nasa-missions');
   this.route('gallery');
   this.route('iss-tracker');

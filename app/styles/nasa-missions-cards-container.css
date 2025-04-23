@@ -1,0 +1,8 @@
+.nasa-missions-cards-container {
+  display: flex;
+  background-color: rgba(14, 14, 41, 0.4);
+  padding: 2em;
+  margin: 3em 6em 6em 10em;
+  border-radius: 8px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.59);
+}

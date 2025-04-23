@@ -1,8 +1,6 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 /* app/styles/app.css */
 
-@import "./nasa-missions-search-filter.css";
-
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +9,7 @@ body {
   overflow-x: hidden;
   font-family: Inter;
   color: white;
-  background-image: url("../milky-way.jpg");
+  background-image: url("../milky-way-ebd932031610536ac037695d346d30b2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
