@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   font-family: Inter;
   color: white;
-  background-image: url("/assets/images/milky-way-ebd932031610536ac037695d346d30b2.jpg");
+  background-image: url("../milky-way-ebd932031610536ac037695d346d30b2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
