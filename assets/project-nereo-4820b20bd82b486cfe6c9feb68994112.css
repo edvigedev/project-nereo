@@ -1,5 +1,12 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
 /* app/styles/app.css */
+
+@import url("./homepage-ac877c8bf02ca886485beeb88ec150ad.css");
+@import url("./nasa-missions-eaaa4ecff140d98369bc4e05ccb23c04.css");
+@import url("./nasa-missions-search-filter-d85df063e4e68e30df8d1674f1eaa0dc.css");
+@import url("./nasa-missions-cards-container-3d947f78fd1c6e5a888b8d77ae5a20e1.css");
+@import url("./nasa-missions-card-c9a3be2366314b35dd263d0b27dbd44d.css");
 
 body {
   margin: 0;
@@ -19,10 +26,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin: 3em 5em;
 }
 
 header a {
@@ -57,12 +61,14 @@ footer {
   width: 100%;
   color: white;
   text-align: center;
+  font: 1em;
+  font-weight: 100;
 }
 
 /* Media queries */
 
 /* Large screens (1200px and up) */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   header {
     margin-left: 8em;
     margin-right: 8em;
@@ -79,7 +85,7 @@ footer {
 }
 
 /* Medium screens (768px - 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (width <= 1199px) and (width >= 768px) {
   header {
     margin-left: 3em;
     margin-right: 3em;
@@ -106,7 +112,7 @@ footer {
 }
 
 /* Small screens (less than 768px) */
-@media (max-width: 767px) {
+@media (width <= 767px) {
   header {
     margin: 2em 1em;
     flex-direction: column;
