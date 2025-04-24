@@ -3,16 +3,17 @@
   flex-direction: column;
   gap: 0.5em;
   width: 15%;
-  background-color: rgba(14, 14, 41, 0.4);
+  height: 25%;
+  background-color: rgb(14 14 41 / 40%);
   padding: 1em;
   margin: 3em 0.5em 6em 6em;
   border-radius: 0.5em;
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0.59);
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
 }
 
 .nasa-missions-search-filter input {
   width: 55%;
-  background-color: rgb(141, 141, 139);
+  background-color: rgb(141 141 139);
   transition: transform 250ms ease-in-out;
   font-size: 1em;
   line-height: 18px;
@@ -59,5 +60,5 @@
 }
 
 .nasa-missions-search-filter li input {
-  margin: 0em;
+  margin: 0;
 }

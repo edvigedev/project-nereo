@@ -10,11 +10,11 @@
   flex-direction: column;
   width: 30%;
   height: 100%;
-  background-color: rgba(14, 14, 41, 0.4);
+  background-color: rgb(14 14 41 / 40%);
   padding: 2em;
   margin: 3em 6em 6em 10em;
   border-radius: 8px;
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0.59);
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
 }
 
 .homepage-random-fact h2 {
@@ -30,7 +30,7 @@
 
 /* Large screens (1200px and up) */
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .homepage-welcome-message {
     font-size: 3em;
   }
@@ -42,7 +42,7 @@
 }
 
 /* Medium screens (768px - 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (width <= 1199px) and (width >= 768px) {
   .homepage-welcome-message {
     font-size: 2.5em;
     margin-bottom: 2.5em;
@@ -51,7 +51,7 @@
 
   .homepage-random-fact {
     width: 60%;
-    margin: 3em auto 4em auto;
+    margin: 3em auto 4em;
     padding: 2em;
   }
 
@@ -66,7 +66,7 @@
 
 /* Small screens (less than 768px) */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .homepage-welcome-message {
     font-size: 2em;
     margin-bottom: 2em;
@@ -75,7 +75,7 @@
 
   .homepage-random-fact {
     width: 75%;
-    margin: 2em auto 3em auto;
+    margin: 2em auto 3em;
     padding: 1.5em;
   }
 
@@ -100,16 +100,16 @@
   flex-direction: column;
   gap: 0.5em;
   width: 15%;
-  background-color: rgba(14, 14, 41, 0.4);
+  background-color: rgb(14 14 41 / 40%);
   padding: 2em;
   margin: 3em 6em 6em 10em;
   border-radius: 8px;
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0.59);
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
 }
 
 .nasa-missions-search-filter input {
   width: 55%;
-  background-color: rgb(141, 141, 139);
+  background-color: rgb(141 141 139);
   transition: transform 250ms ease-in-out;
   font-size: 1em;
   line-height: 18px;
@@ -156,5 +156,5 @@
 }
 
 .nasa-missions-search-filter li input {
-  margin: 0em;
+  margin: 0;
 }

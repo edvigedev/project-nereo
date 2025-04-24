@@ -1,3 +1,9 @@
 <div class="nasa-missions-cards-container">
-  <img />
+  {{#if @missions}}
+    {{#each @missions as |mission|}}
+      <NasaMissionsCard @mission={{mission}} />
+    {{/each}}
+  {{else}}
+    <p>No mission available</p>
+  {{/if}}
 </div>
