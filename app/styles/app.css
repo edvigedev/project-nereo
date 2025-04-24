@@ -61,6 +61,8 @@ footer {
   width: 100%;
   color: white;
   text-align: center;
+  font: 1em;
+  font-weight: 100;
 }
 
 /* Media queries */

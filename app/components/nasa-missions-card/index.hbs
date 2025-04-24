@@ -7,7 +7,10 @@
     {{/if}}
   </h3>
   <p class="nasa-missions-card-endDate">
-
+    {{#if @mission.startDate}}
+      {{@mission.startDate}}
+    {{/if}}
+    -
     {{#if @mission.endDate}}
       {{@mission.endDate}}
     {{/if}}
