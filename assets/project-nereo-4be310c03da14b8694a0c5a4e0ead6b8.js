@@ -40,7 +40,7 @@ throw new TypeError("@@toPrimitive must return a primitive value.")}return("stri
 return"symbol"==typeof t?t:t+""}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function d(e,t,n,r,o){var i={}
 return Object.keys(r).forEach((function(e){i[e]=r[e]})),i.enumerable=!!i.enumerable,i.configurable=!!i.configurable,("value"in i||i.initializer)&&(i.writable=!0),i=n.slice().reverse().reduce((function(n,r){return r(e,t,n)||n}),i),o&&void 0!==i.initializer&&(i.value=i.initializer?i.initializer.call(o):void 0,i.initializer=void 0),void 0===i.initializer?(Object.defineProperty(e,t,i),null):i}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 e.default=(i=class extends t.default{constructor(...e){super(...e),u(this,"missions",a,this),u(this,"isLoading",l,this),u(this,"error",s,this),c(this,"proxyBase",o.default.nasaProxyUrl)}async fetchMissions(){this.isLoading=!0,this.error=null
-try{const e=await(0,n.default)(`${this.proxyBase}/geode-py/ws/api/missions`,{method:"GET",mode:"cors"}),t=(await e.json()).data.slice(0,10)
+try{const e=await(0,n.default)(`${this.proxyBase}/geode-py/ws/api/missions`,{method:"GET",mode:"cors",headers:{"X-Requested-With":"XMLHttpRequest"}}),t=(await e.json()).data.slice(0,10)
 console.log("Basic mission list:",t)
 const r=(await Promise.all(t.map((async e=>{const t=e.mission.split("/geode-py/ws/api/")[1],r=`${this.proxyBase}/geode-py/ws/api/${t}`,o=await(0,n.default)(r)
 return await o.json()})))).map((e=>({name:e.identifier||"Unnamed Mission",endDate:e.endDate||"No end date available",startDate:e.startDate||"No start date available"})))
