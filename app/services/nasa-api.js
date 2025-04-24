@@ -1,13 +1,14 @@
 import Service from '@ember/service';
 import fetch from 'fetch';
 import { tracked } from '@glimmer/tracking';
+import config from 'project-nereo/config/environment';
 
 export default class NasaApiService extends Service {
   @tracked missions = [];
   @tracked isLoading = false;
   @tracked error = null;
 
-  apiUrl = `/nasa-api/geode-py/ws/api/missions`;
+  proxyBase = config.nasaProxyUrl;
 
   async fetchMissions() {
     this.isLoading = true;
@@ -19,10 +20,13 @@ export default class NasaApiService extends Service {
     try {
       // Build the proxied URL
 
-      const response = await fetch(`${this.apiUrl}`, {
-        method: 'GET',
-        mode: 'cors',
-      });
+      const response = await fetch(
+        `${this.proxyBase}/geode-py/ws/api/missions`,
+        {
+          method: 'GET',
+          mode: 'cors',
+        },
+      );
       const missionsList = await response.json();
 
       const limitedMissions = missionsList.data.slice(0, 10);
@@ -30,8 +34,8 @@ export default class NasaApiService extends Service {
 
       const missionDetails = await Promise.all(
         limitedMissions.map(async (oneMission) => {
-          const missionPath = oneMission.mission.split('/ws/api/')[1];
-          const proxiedUrl = `/nasa-api/geode-py/ws/api/${missionPath}`;
+          const missionPath = oneMission.mission.split('/geode-py/ws/api/')[1];
+          const proxiedUrl = `${this.proxyBase}/geode-py/ws/api/${missionPath}`;
           const res = await fetch(proxiedUrl);
           return await res.json();
         }),
