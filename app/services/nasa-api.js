@@ -9,6 +9,7 @@ export default class NasaApiService extends Service {
   @tracked error = null;
 
   proxyBase = config.nasaProxyUrl;
+  isProduction = config.environment === 'production';
 
   async fetchMissions() {
     this.isLoading = true;
@@ -18,15 +19,21 @@ export default class NasaApiService extends Service {
     // console.log('Using proxy:', proxy);
 
     try {
-      // Build the proxied URL
+      const nasaPath = '/geode-py/ws/api/missions';
+      const nasaUrl = 'https://osdr.nasa.gov' + nasaPath;
 
-      const response = await fetch(
-        `${this.proxyBase}/geode-py/ws/api/missions`,
-        {
-          method: 'GET',
-          mode: 'cors',
+      const fetchUrl = this.isProduction
+        ? `${this.proxyBase}/${nasaUrl}`
+        : `${this.proxyBase}${nasaPath}`;
+
+      const response = await fetch(fetchUrl, {
+        method: 'GET',
+        mode: 'cors',
+
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest',
         },
-      );
+      });
       const missionsList = await response.json();
 
       const limitedMissions = missionsList.data.slice(0, 10);
@@ -34,9 +41,12 @@ export default class NasaApiService extends Service {
 
       const missionDetails = await Promise.all(
         limitedMissions.map(async (oneMission) => {
-          const missionPath = oneMission.mission.split('/geode-py/ws/api/')[1];
-          const proxiedUrl = `${this.proxyBase}/geode-py/ws/api/${missionPath}`;
-          const res = await fetch(proxiedUrl);
+          const missionUrl = this.isProduction
+            ? `${this.proxyBase}/${oneMission.mission}`
+            : `${this.proxyBase}${oneMission.mission.replace('https://osdr.nasa.gov', '')}`;
+          const res = await fetch(missionUrl, {
+            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+          });
           return await res.json();
         }),
       );

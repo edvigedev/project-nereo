@@ -1,0 +1,19 @@
+.nasa-missions-card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 10em;
+  width: 20em;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
+}
+
+.nasa-missions-card-title {
+  font-weight: 400;
+}
+
+.nasa-missions-card-endDate {
+  font-weight: 200;
+}
