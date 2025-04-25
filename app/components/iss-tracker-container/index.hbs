@@ -1,5 +1,11 @@
 <div class="iss-tracker-container">
-  <section class="iss-tracker-placeholders">
+  <div
+    class="iss-tracker-map"
+    {{did-insert this.setupMap}}
+    {{did-update this.updateMarker @iss.latitude @iss.longitude}}
+  ></div>
+
+  <section class="iss-tracker-coordinates">
     <div class="iss-tracker-data">
       <h3>Latitude</h3>
       <h3>{{@iss.latitude}} N</h3>
@@ -11,7 +17,7 @@
     </div>
 
     <div class="iss-tracker-data">
-      <h3>Time(GTM)</h3>
+      <h3>Last updated (GTM)</h3>
       <h3>{{@iss.formattedTimestamp}} </h3>
     </div>
   </section>

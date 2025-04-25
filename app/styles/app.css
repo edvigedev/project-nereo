@@ -1,14 +1,13 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
 /* app/styles/app.css */
-
+@import "/assets/leaflet.css";
 @import url("./homepage.css");
 @import url("./nasa-missions.css");
 @import url("./nasa-missions-search-filter.css");
 @import url("./nasa-missions-cards-container.css");
 @import url("./nasa-missions-card.css");
 @import url("./iss-tracker.css");
-
 body {
   margin: 0;
   padding: 0;

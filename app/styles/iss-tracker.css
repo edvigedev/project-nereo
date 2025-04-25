@@ -4,12 +4,24 @@
 }
 
 .iss-tracker-container {
-  display: flex;
   background-color: rgb(14 14 41 / 40%);
+  min-width: 800px;
   padding: 1em;
   margin: 1em;
   border-radius: 8px;
   box-shadow: 0 0 1px rgb(255 255 255 / 59%);
+}
+
+.iss-tracker-coordinates {
+  display: flex;
+  flex-direction: space-evenly;
+  gap: 4em;
+}
+
+.iss-tracker-map {
+  border-radius: 8px;
+  width: 800px;
+  height: 800px;
 }
 
 .iss-tracker-data {

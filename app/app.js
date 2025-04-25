@@ -6,6 +6,9 @@ import config from 'project-nereo/config/environment';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
+import * as EmberString from '@ember/string';
+window.EmberString = EmberString;
+
 // Initialize Font Awesome
 library.add(faSearch, faMagnifyingGlass);
 
