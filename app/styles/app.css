@@ -67,23 +67,6 @@ footer {
 
 /* Media queries */
 
-/* Large screens (1200px and up) */
-@media (width >= 1200px) {
-  header {
-    margin-left: 8em;
-    margin-right: 8em;
-  }
-
-  .project-logo {
-    height: 12em;
-    width: 8em;
-  }
-
-  nav {
-    gap: 3em;
-  }
-}
-
 /* Medium screens (768px - 1199px) */
 @media (width <= 1199px) and (width >= 768px) {
   header {

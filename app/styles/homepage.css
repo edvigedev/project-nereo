@@ -26,22 +26,6 @@
   font-size: 1.5em;
 }
 
-/* Media queries */
-
-/* Large screens (1200px and up) */
-
-@media (width >= 1200px) {
-  .homepage-welcome-message {
-    font-size: 3em;
-  }
-
-  .homepage-random-fact {
-    width: 30%;
-    margin: 3em 6em 6em 10em;
-  }
-}
-
-/* Medium screens (768px - 1199px) */
 @media (width <= 1199px) and (width >= 768px) {
   .homepage-welcome-message {
     font-size: 2.5em;
@@ -63,8 +47,6 @@
     font-size: 1.3em;
   }
 }
-
-/* Small screens (less than 768px) */
 
 @media (width <= 767px) {
   .homepage-welcome-message {

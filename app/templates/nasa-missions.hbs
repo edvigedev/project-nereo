@@ -1,18 +1,18 @@
 {{page-title "Missions"}}
-<div class="nasa-missions-container">
-  <h1 class="nasa-missions-title">
-    All NASA Missions
-  </h1>
-  <section class="nasa-missions-section">
-    <NasaMissionsSearchFilter />
-    {{#if this.nasaApi.isLoading}}
-      <div class="loading-indicator">
-        <p>Loading NASA missions...</p>
-      </div>
-    {{else}}
-      <NasaMissionsCardsContainer @missions={{@model}} />
-    {{/if}}
 
-  </section>
-</div>
+<h1 class="nasa-missions-title">
+  All NASA Missions
+</h1>
+<section class="nasa-missions-section">
+  <NasaMissionsSearchFilter />
+  {{#if this.nasaApi.isLoading}}
+    <div class="loading-indicator">
+      <p>Loading NASA missions...</p>
+    </div>
+  {{else}}
+    <NasaMissionsCardsContainer @missions={{@model}} />
+  {{/if}}
+
+</section>
+
 {{outlet}}
