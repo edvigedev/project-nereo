@@ -1,0 +1,38 @@
+.nasa-missions-card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 250px;
+  min-height: 150px;
+  max-width: 400px;
+  max-height: 250px;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
+}
+
+.nasa-missions-card-title {
+  font-weight: 400;
+}
+
+.nasa-missions-card-endDate {
+  font-weight: 200;
+}
+
+/* @media (width <= 1199px) and (width >= 768px) {
+  .nasa-missions-card-container {
+    max-width: 400px;
+    margin: 1em;
+    padding: 1em;
+    height: auto;
+  }
+}
+@media (width <= 767px) {
+  .nasa-missions-card-container {
+    width: 100%;
+    margin: 0.7em;
+    padding: 0.7em;
+    height: auto;
+  }
+} */

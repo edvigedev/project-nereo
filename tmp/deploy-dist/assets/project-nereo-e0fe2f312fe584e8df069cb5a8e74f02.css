@@ -2,11 +2,11 @@
 
 /* app/styles/app.css */
 
-@import url("./homepage-ac877c8bf02ca886485beeb88ec150ad.css");
-@import url("./nasa-missions-eaaa4ecff140d98369bc4e05ccb23c04.css");
-@import url("./nasa-missions-search-filter-d85df063e4e68e30df8d1674f1eaa0dc.css");
-@import url("./nasa-missions-cards-container-3d947f78fd1c6e5a888b8d77ae5a20e1.css");
-@import url("./nasa-missions-card-c9a3be2366314b35dd263d0b27dbd44d.css");
+@import url("./homepage-52375de677ab3829e85801487a658bed.css");
+@import url("./nasa-missions-615879627c7e478f05c12ad2b088208c.css");
+@import url("./nasa-missions-search-filter-dd50792340271475fae547bb4a08f171.css");
+@import url("./nasa-missions-cards-container-15fa04bb09e5757eb2b65c154a287b4b.css");
+@import url("./nasa-missions-card-ddddf70a9db91956a674da0182a05404.css");
 
 body {
   margin: 0;
@@ -66,23 +66,6 @@ footer {
 }
 
 /* Media queries */
-
-/* Large screens (1200px and up) */
-@media (width >= 1200px) {
-  header {
-    margin-left: 8em;
-    margin-right: 8em;
-  }
-
-  .project-logo {
-    height: 12em;
-    width: 8em;
-  }
-
-  nav {
-    gap: 3em;
-  }
-}
 
 /* Medium screens (768px - 1199px) */
 @media (width <= 1199px) and (width >= 768px) {
