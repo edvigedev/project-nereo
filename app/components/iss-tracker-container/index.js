@@ -38,10 +38,10 @@ export default class IssTrackerContainerComponent extends Component {
         shadowSize: [41, 41],
       });
 
-      this.marker = L.marker([
-        Number(this.args.iss.latitude),
-        Number(this.args.iss.longitude),
-      ]).addTo(this.map);
+      this.marker = L.marker(
+        [Number(this.args.iss.latitude), Number(this.args.iss.longitude)],
+        { icon: issIcon },
+      ).addTo(this.map);
     }
   }
 
