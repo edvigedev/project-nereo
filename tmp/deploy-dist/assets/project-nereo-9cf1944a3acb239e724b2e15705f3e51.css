@@ -1,0 +1,129 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+/* app/styles/app.css */
+@import "/project-nereo/assets/leaflet.css";
+@import "/assets/leaflet.css";
+@import url("./homepage-52375de677ab3829e85801487a658bed.css");
+@import url("./nasa-missions-615879627c7e478f05c12ad2b088208c.css");
+@import url("./nasa-missions-search-filter-dd50792340271475fae547bb4a08f171.css");
+@import url("./nasa-missions-cards-container-15fa04bb09e5757eb2b65c154a287b4b.css");
+@import url("./nasa-missions-card-ddddf70a9db91956a674da0182a05404.css");
+@import url("./iss-tracker-9d3bf2223f0141e073ed847f6ee1d1e1.css");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Inter;
+  color: white;
+  background-image: url("../milky-way-ebd932031610536ac037695d346d30b2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 5em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  gap: 1em;
+}
+
+.project-logo {
+  height: 10em;
+  width: 7em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+nav a {
+  font-weight: 300;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font: 1em;
+  font-weight: 100;
+}
+
+/* Media queries */
+
+/* Medium screens (768px - 1199px) */
+@media (width <= 1199px) and (width >= 768px) {
+  header {
+    margin-left: 3em;
+    margin-right: 3em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .project-logo {
+    height: 9em;
+    width: 6em;
+  }
+}
+
+/* Small screens (less than 768px) */
+@media (width <= 767px) {
+  header {
+    margin: 2em 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .project-logo {
+    height: 7em;
+    width: 5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 1em 0;
+  }
+}
