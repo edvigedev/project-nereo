@@ -425,7 +425,7 @@ e.className="leaflet-marker-"+c+" "+(t.className||""),a&&(e.style.marginLeft=-a.
 return i&&i[t]}
 return(e=c(e,/^url\((['"])?(.+)\1\)$/,2))&&c(e,/^(.*)marker-icon\.png$/,1)},_detectIconPath:function(){var e=ic("div","leaflet-default-icon-path",document.body),c=tc(e,"background-image")||tc(e,"backgroundImage")
 if(document.body.removeChild(e),c=this._stripUrl(c))return c
-var t=document.querySelector('link[href$="leaflet-a6f452e0ce4fee24eb90d17947db29c9.css"]')
+var t=document.querySelector('link[href$="leaflet.css"]')
 return t?t.href.substring(0,t.href.length-11-1):""}}),At=Jc.extend({initialize:function(e){this._marker=e},addHooks:function(){var e=this._marker._icon
 this._draggable||(this._draggable=new ct(e,e,!0)),this._draggable.on({dragstart:this._onDragStart,predrag:this._onPreDrag,drag:this._onDrag,dragend:this._onDragEnd},this).enable(),rc(e,"leaflet-marker-draggable")},removeHooks:function(){this._draggable.off({dragstart:this._onDragStart,predrag:this._onPreDrag,drag:this._onDrag,dragend:this._onDragEnd},this).disable(),this._marker._icon&&fc(this._marker._icon,"leaflet-marker-draggable")},moved:function(){return this._draggable&&this._draggable._moved},_adjustPan:function(e){var c=this._marker,t=c._map,i=this._marker.options.autoPanSpeed,s=this._marker.options.autoPanPadding,a=gc(c._icon),n=t.getPixelBounds(),l=t.getPixelOrigin(),o=E(n.min._subtract(l).add(s),n.max._subtract(l).subtract(s))
 if(!o.contains(a)){var r=R((Math.max(o.max.x,a.x)-o.max.x)/(n.max.x-o.max.x)-(Math.min(o.min.x,a.x)-o.min.x)/(n.min.x-o.min.x),(Math.max(o.max.y,a.y)-o.max.y)/(n.max.y-o.max.y)-(Math.min(o.min.y,a.y)-o.min.y)/(n.min.y-o.min.y)).multiplyBy(i)
