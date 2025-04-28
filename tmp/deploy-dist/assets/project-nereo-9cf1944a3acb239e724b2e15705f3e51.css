@@ -1,7 +1,7 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
 /* app/styles/app.css */
-/* @import "/project-nereo/assets/leaflet-a6f452e0ce4fee24eb90d17947db29c9.css"; */
+@import "/project-nereo/assets/leaflet-a6f452e0ce4fee24eb90d17947db29c9.css";
 @import "/assets/leaflet-a6f452e0ce4fee24eb90d17947db29c9.css";
 @import url("./homepage-52375de677ab3829e85801487a658bed.css");
 @import url("./nasa-missions-615879627c7e478f05c12ad2b088208c.css");
