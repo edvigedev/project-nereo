@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     nasaProxyUrl:
       environment === 'production'
-        ? 'http://my-cors-anywhere-lr18.onrender.com'
+        ? 'https://my-cors-anywhere-lr18.onrender.com'
         : '/nasa-api',
     modulePrefix: 'project-nereo',
     environment,
