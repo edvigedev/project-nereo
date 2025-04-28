@@ -6,7 +6,7 @@ export default class IssTrackerRoute extends Route {
     // Pick the right URL for dev or production
     const apiUrl =
       config.environment === 'production'
-        ? `${config.nasaProxyUrl}/https://api.open-notify.org/iss-now.json`
+        ? `${config.nasaProxyUrl}/http://api.open-notify.org/iss-now.json`
         : '/iss-proxy/iss-now.json';
 
     // Fetch the ISS position
