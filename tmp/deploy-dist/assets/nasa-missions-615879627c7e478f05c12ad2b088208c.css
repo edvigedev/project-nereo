@@ -1,0 +1,35 @@
+.nasa-missions-title {
+  font-weight: 100;
+  text-align: center;
+  margin: 2em;
+  font-size: 3em;
+}
+
+.nasa-missions-section {
+  display: flex;
+  justify-content: center;
+
+  gap: 1em;
+}
+
+/* @media (width <= 1199px) and (width >= 768px) {
+  .nasa-missions-title {
+    font-size: 2.2em;
+    margin-bottom: 0.7em;
+  }
+  .nasa-missions-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (width <= 767px) {
+  .nasa-missions-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .nasa-missions-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+} */

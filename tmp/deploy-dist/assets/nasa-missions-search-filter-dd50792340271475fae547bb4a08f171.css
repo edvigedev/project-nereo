@@ -1,0 +1,87 @@
+.nasa-missions-search-filter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5em;
+  max-width: 150px;
+  max-height: 180px;
+  background-color: rgb(14 14 41 / 40%);
+  padding: 1em;
+  margin: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
+}
+
+.nasa-missions-search-filter input {
+  max-width: 50px;
+  background-color: rgb(141 141 139);
+  transition: transform 250ms ease-in-out;
+  font-size: 1em;
+  line-height: 5px;
+  border-radius: 10px;
+  border: 1px solid #575756;
+  padding: 0.7rem;
+  padding-left: 2.5rem;
+  color: white;
+  margin: 0.5em;
+}
+
+.search-icon {
+  .search-icon {
+    color: white;
+    font-size: 1em;
+    z-index: 10;
+  }
+}
+
+.nasa-missions-search-filter p {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  margin: 0.5em;
+
+  font-weight: 200;
+}
+
+.nasa-missions-search-filter ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nasa-missions-search-filter li {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-weight: 200;
+  margin-right: 10em;
+}
+
+.nasa-missions-search-filter li input {
+  margin: 0;
+  width: 0.8em;
+}
+
+/* @media (width <= 1199px) and (width >= 768px) {
+  .nasa-missions-search-filter {
+    margin: 2em;
+    max-width: 250px;
+    padding: 1em;
+  }
+}
+@media (width <= 767px) {
+  .nasa-missions-search-filter {
+    margin: 1em;
+    width: 100%;
+    padding: 0.7em;
+  }
+  .nasa-missions-search-filter input {
+    width: 100%;
+    font-size: 1em;
+    padding-left: 2em;
+  }
+} */

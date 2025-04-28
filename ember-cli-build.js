@@ -3,10 +3,11 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-  const app = new EmberApp(defaults, {});
-
-  // app.import('app/styles/homepage.css');
-  // app.import('app/styles/nasa-missions.css');
-
+  let app = new EmberApp(defaults, {
+    // ...existing options...
+    fingerprint: {
+      exclude: ['leaflet.css'],
+    },
+  });
   return app.toTree();
 };
