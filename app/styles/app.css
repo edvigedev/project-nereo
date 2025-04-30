@@ -9,6 +9,8 @@
 @import url("./nasa-missions-cards-container.css");
 @import url("./nasa-missions-card.css");
 @import url("./iss-tracker.css");
+@import url("./loading.css");
+@import url("./error.css");
 body {
   margin: 0;
   padding: 0;

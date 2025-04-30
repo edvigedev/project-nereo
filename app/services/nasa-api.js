@@ -15,9 +15,6 @@ export default class NasaApiService extends Service {
     this.isLoading = true;
     this.error = null;
 
-    // const proxy = config.nasaProxyUrl;
-    // console.log('Using proxy:', proxy);
-
     try {
       const nasaPath = '/geode-py/ws/api/missions';
       const nasaUrl = 'https://osdr.nasa.gov' + nasaPath;
@@ -65,6 +62,7 @@ export default class NasaApiService extends Service {
     } catch (error) {
       console.error('Error fetching missions:', error);
       this.error = 'Failed to load mission data.';
+      throw error;
     } finally {
       this.isLoading = false;
     }
