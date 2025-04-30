@@ -1,0 +1,8 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+  font-weight: 500;
+  font-size: 30px;
+  animation: l1 1s linear infinite alternate;
+}
