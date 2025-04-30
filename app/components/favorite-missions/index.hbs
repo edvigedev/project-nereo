@@ -1,0 +1,12 @@
+<section class="favorite-missions-cards-container">
+
+  {{log @favoriteMissions}}
+  {{#if @favoriteMissions}}
+    {{#each @favoriteMissions as |favoriteMission|}}
+
+      <NasaMissionsCard @mission={{favoriteMission}} />
+      {{log favoriteMission}}
+    {{/each}}
+  {{/if}}
+
+</section>

@@ -3,7 +3,15 @@ import { service } from '@ember/service';
 
 export default class MissionsRoute extends Route {
   @service nasaApi;
+  @service favorites;
   async model() {
-    return this.nasaApi.fetchMissions();
+    return {
+      missions: await this.nasaApi.fetchMissions(),
+      favoriteMissions: this.favorites.getFavorites('missions'),
+    };
+  }
+  setupController(controller, model) {
+    super.setupController(controller, model);
+    controller.set('missions', model.missions);
   }
 }

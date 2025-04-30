@@ -1,0 +1,26 @@
+.favorite-missions-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.favorite-missions-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 400px;
+  height: auto;
+  background-color: rgb(14 14 41 / 40%);
+  padding: 1em;
+  margin: 3em;
+  border-radius: 8px;
+  box-shadow: 0 0 1px rgb(255 255 255 / 59%);
+}
+
+.favorite-missions-title {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2em;
+}

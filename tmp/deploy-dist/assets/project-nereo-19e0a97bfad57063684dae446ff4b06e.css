@@ -28,8 +28,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  margin: 2em;
+  justify-content: space-around;
+  margin: 4em;
 }
 
 header a {

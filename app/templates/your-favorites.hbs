@@ -1,2 +1,12 @@
 {{page-title "YourFavorites"}}
+<div class="your-favorites">
+  <section class="favorite-missions-section">
+    <h2 class="favorite-missions-title">Your Favorite Missions</h2>
+    <FavoriteMissions @favoriteMissions={{@model.favoriteMissions}} />
+  </section>
+  <section class="favorite-missions-section">
+    <h2 class="favorite-missions-title">Your Favorite Pictures</h2>
+    <FavoriteMissions @favoriteMissions={{@model.favoriteMissions}} />
+  </section>
+</div>
 {{outlet}}

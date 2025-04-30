@@ -1,8 +1,16 @@
 import Component from '@glimmer/component';
+import { service } from '@ember/service';
+import { action } from '@ember/object';
 
 export default class NasaMissionsCard extends Component {
-  get missionStatus() {
-    const status = this.args.mission.status;
-    return `status ${status}`;
+  @service favorites;
+  @action
+  toggleFavorite() {
+    const id = this.args.mission.name;
+    this.favorites.toggleFavorite('missions', id);
+  }
+
+  get isFavorited() {
+    return this.favorites.isFavorite('missions', this.args.mission.name);
   }
 }
