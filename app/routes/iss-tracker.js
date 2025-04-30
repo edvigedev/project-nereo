@@ -18,9 +18,6 @@ export default class IssTrackerRoute extends Route {
 
     // DEBUG: Log the raw text to see if you're getting JSON or HTML
     const text = await response.text();
-    console.log('API response:', text);
-
-    // Try to parse as JSON
     const data = JSON.parse(text);
 
     return {

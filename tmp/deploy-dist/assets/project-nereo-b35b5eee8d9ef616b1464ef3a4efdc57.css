@@ -7,10 +7,12 @@
 @import url("./nasa-missions-e42af1165eaaa60be4a49e80a9c76326.css");
 @import url("./nasa-missions-search-filter-d2fcc1fb190ad4006298bf66426f5da4.css");
 @import url("./nasa-missions-cards-container-49d01f39cb231b1f646d68348ea15db0.css");
-@import url("./nasa-missions-card-ddddf70a9db91956a674da0182a05404.css");
+@import url("./nasa-missions-card-2fd755bd5f46c0e9118d0af62fa8153a.css");
 @import url("./iss-tracker-9d3bf2223f0141e073ed847f6ee1d1e1.css");
 @import url("./loading-754d58ee89ccf0b61dcf871b69cb3c92.css");
 @import url("./error-8cfbe4bba40239eb22884c61f7037e57.css");
+@import url("./favorite-missions-cards-container-79711858a27a4072a62bc20a5616b5bf.css");
+@import url("./your-favorites-cd802a5b073630e4ab600c1ab70434b7.css");
 body {
   margin: 0;
   padding: 0;
