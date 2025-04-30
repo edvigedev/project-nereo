@@ -12,6 +12,28 @@
   box-shadow: 0 0 1px rgb(255 255 255 / 59%);
 }
 
+.button-like {
+  border: 2px solid #8a8a8a;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0.2rem;
+  width: 3em;
+  border-radius: 3rem;
+  color: #8a8a8a;
+  transition: all ease 0.4s;
+}
+
+.button-like-selected {
+  border: 2px solid rgb(237, 80, 80);
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0.2rem;
+  width: 3em;
+  border-radius: 3rem;
+  color: rgb(237, 80, 80);
+  transition: all ease 0.4s;
+}
+
 .nasa-missions-card-title {
   font-weight: 400;
 }
