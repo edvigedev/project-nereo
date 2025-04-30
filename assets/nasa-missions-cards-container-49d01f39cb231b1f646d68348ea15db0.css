@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-width: 600px;
-  max-width: 750px;
+  min-width: 400px;
+  max-width: 600px;
   height: auto;
   background-color: rgb(14 14 41 / 40%);
   padding: 1em;
-  margin: 1em;
+  margin: 1.5em;
   border-radius: 8px;
   box-shadow: 0 0 1px rgb(255 255 255 / 59%);
 }
