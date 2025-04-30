@@ -6,9 +6,3 @@
   font-size: 30px;
   animation: l1 1s linear infinite alternate;
 }
-
-@keyframes l1 {
-  to {
-    opacity: 0;
-  }
-}
