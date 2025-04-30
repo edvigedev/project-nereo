@@ -5,4 +5,9 @@
   font-weight: 500;
   font-size: 30px;
   color: red;
+  text-shadow: 0 0 1em firebrick;
+}
+
+.error:hover {
+  text-shadow: 0 0 1em white;
 }

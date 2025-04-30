@@ -29,7 +29,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 3em 5em;
+  margin: 2em;
 }
 
 header a {
@@ -43,8 +43,8 @@ header a {
 }
 
 .project-logo {
-  height: 10em;
-  width: 7em;
+  height: 5em;
+  width: 3.5em;
 }
 
 nav {
